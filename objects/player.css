@@ -1,0 +1,146 @@
+/* Video area layouts */
+.video.layout.XL {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 768px;
+	height: 432px;
+}
+
+.video.layout.XL.vertical-playlist-enabled {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 1024px;
+	height: 432px;
+}
+
+.video.layout.XL.horizontal-playlist-enabled {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 768px;
+	height: 612px;
+}
+
+.video.layout.L {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 640px;
+	height: 360px;
+}
+
+.video.layout.L.vertical-playlist-enabled {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 896px;
+	height: 360px;
+}
+
+.video.layout.L.horizontal-playlist-enabled {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 640px;
+	height: 540px;
+}
+
+.video.layout.M {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 512px;
+	height: 288px;
+}
+
+.video.layout.M.vertical-playlist-enabled {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 768px;
+	height: 288px;
+}
+
+.video.layout.M.horizontal-playlist-enabled {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 512px;
+	height: 443px;
+}
+
+.video.layout.S {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 384px;
+	height: 216px;
+}
+
+.video.layout.S.vertical-playlist-enabled {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 640px;
+	height: 216px;
+}
+
+.video.layout.S.horizontal-playlist-enabled {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 384px;
+	height: 371px;
+}
+
+.video.layout.XS {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 256px;
+	height: 144px;
+}
+
+/* Player layouts */
+.player.layout.XL {
+	width: 768px;
+	height: 432px;
+	top:0px;
+	left:0px;
+	position:absolute;
+}
+
+.player.layout.L {
+	width: 640px;
+	height: 360px;
+	top:0px;
+	left:0px;
+	position:absolute;
+}
+
+.player.layout.M {
+	width: 512px;
+	height: 288px;
+	top: 0px;
+	left: 0px;
+	position:absolute;
+}
+
+.player.layout.S {
+	width: 384px;
+	height: 216px;
+	top: 0px;
+	left: 0px;
+	position:absolute;
+}
+
+.player.layout.XS {
+	width: 256px;
+	height: 144px;
+	top: 0px;
+	left: 0px;
+	position:absolute;
+}
+

@@ -1,0 +1,52 @@
+<html>
+<body>
+<!-- AUDIENCESCIENCE AD TAG CODE -->
+<script src="http://js.revsci.net/gateway/gw.js?csid=A08723&auto=t"></script>
+<!-- END AUDIENCESCIENCE AD TAG CODE -->
+
+<!-- Reset cookie in targeting-friendly format -->
+<script type="text/javascript">
+docCookies = {
+  getItem: function (sKey) {
+    if (!sKey || !this.hasItem(sKey)) { return null; }
+    return unescape(document.cookie.replace(new RegExp("(?:^|.*;\\s*)" + escape(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*((?:[^;](?!;))*[^;]?).*"), "$1"));
+  },
+  setItem: function (sKey, sValue, vEnd, sPath, sDomain, bSecure) {
+    if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/.test(sKey)) { return; }
+    var sExpires = "";
+    if (vEnd) {
+      switch (typeof vEnd) {
+        case "number": sExpires = "; max-age=" + vEnd; break;
+        case "string": sExpires = "; expires=" + vEnd; break;
+        case "object": if (vEnd.hasOwnProperty("toGMTString")) { sExpires = "; expires=" + vEnd.toGMTString(); } break;
+      }
+    }
+    document.cookie = escape(sKey) + "=" + sValue + sExpires + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "") + (bSecure ? "; secure" : "");
+  },
+  removeItem: function (sKey) {
+    if (!sKey || !this.hasItem(sKey)) { return; }
+    var oExpDate = new Date();
+    oExpDate.setDate(oExpDate.getDate() - 1);
+    document.cookie = escape(sKey) + "=; expires=" + oExpDate.toGMTString() + "; path=/";
+  },
+  hasItem: function (sKey) { return (new RegExp("(?:^|;\\s*)" + escape(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie); }
+};
+
+var oldAdCookie = docCookies.getItem("asi_segs");
+
+if (oldAdCookie != null && oldAdCookie != ""){
+
+
+var newOldAdCookie = oldAdCookie.replace(/\|/g, "$");
+newOldAdCookie = newOldAdCookie.replace(/A/g, "A08723_");
+newOldAdCookie = newOldAdCookie.replace(/D/g, "D08734_");
+
+
+	docCookies.setItem("tq_rsi_segs", newOldAdCookie, 2592000, "/", "go.com");
+} else {
+	docCookies.setItem("tq_rsi_segs", "", 30, "/", "go.com");
+}
+
+</script>
+</body>
+</html>
